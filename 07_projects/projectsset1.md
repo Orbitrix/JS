@@ -62,3 +62,17 @@ form.addEventListener("click", function(e){
 })
 
 ```
+
+## Project 3
+
+```javascript
+
+let clock = document.getElementById("clock")
+
+setInterval(function(){
+    let date = new Date()
+
+    clock.innerHTML = date.toLocaleTimeString()
+}, 1000)
+
+```
