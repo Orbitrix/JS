@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Chai aur Javascript</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+
+
+    // function set() {
+    //     console.log("Orbitrix", Date.now())
+    // }
+
+    let intervalId;
+
+    const startLog = function () {
+        intervalId = setInterval(start, 1000)
+
+        function start() {
+            console.log("Orbitrix", Date.now())
+        }
+    }
+
+    const stopLog = function () {
+        clearInterval(intervalId)
+    }
+
+    document.getElementById("start").addEventListener("click", startLog)
+    document.getElementById("stop").addEventListener("click", stopLog)
+
+
+
+    // const sayDate = function(str){
+    //     console.log(str, Date.now());
+    // }
+
+    // const intervalId = setInterval(sayDate, 1000, "hi")
+
+    // clearInterval(intervalId)
+</script>
+
+</html>
